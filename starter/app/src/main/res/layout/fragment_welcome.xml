@@ -34,17 +34,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
             android:text="@string/next_button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/welcome_text2"
-            app:layout_constraintVertical_bias="0.19999999"
+            app:layout_constraintVertical_bias="0.19"
             tools:ignore="TextContrastCheck" />
 
         <TextView
-            android:id="@+id/welcome_text1"
-            style="@style/welcome_text_style"
+            android:id="@+id/welcome_text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -54,23 +54,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/welcome_logo"
-            app:layout_constraintVertical_bias="0.26"
-            tools:ignore="TextContrastCheck" />
-
-        <TextView
-            android:id="@+id/welcome_text2"
-            style="@style/welcome_text_style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:text="@string/welcomeText3"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/welcome_text1"
-            app:layout_constraintVertical_bias="0.0"
-            tools:ignore="TextContrastCheck" />
+            app:layout_constraintVertical_bias="0.19"
+            style="@style/paragraph_style" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

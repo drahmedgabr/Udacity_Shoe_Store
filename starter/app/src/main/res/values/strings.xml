@@ -8,8 +8,7 @@
     <string name="password_label">Password</string>
     <string name="email_hint">person@company.com</string>
     <string name="login_text">Login</string>
-    <string name="welcomeText2">Welcome to the best online store app</string>
-    <string name="welcomeText3">Fasten your seat belts and get ready</string>
     <string name="next_button">Next</string>
     <string name="welcome_text">Welcome again!</string>
+    <string name="welcomeText2">Hi Ahmed\nYour Last Login was on 15/09/2022 13:25:09</string>
 </resources>
