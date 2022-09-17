@@ -7,26 +7,25 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import com.udacity.shoestore.databinding.FragmentListBinding
 import com.udacity.shoestore.databinding.FragmentLoginBinding
 
-
-class LoginFragment : Fragment() {
+class ListFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        val binding = DataBindingUtil.inflate<FragmentLoginBinding>(
-            inflater, R.layout.fragment_login, container, false
+        val binding = DataBindingUtil.inflate<FragmentListBinding>(
+            inflater, R.layout.fragment_list, container, false
         )
 
-        binding.nextButton.setOnClickListener {
-            view!!.findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
+        binding.floatingActionButton.setOnClickListener {
+            view!!.findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment())
         }
 
         return binding.root
     }
-
 
 }

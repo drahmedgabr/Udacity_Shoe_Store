@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--use layout tag to enable data binding-->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--use constraintlayout because its amazing flexibility & power to arrange items-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/shoe_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/shoe_name"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="@+id/shoe_name_text"
+        tools:context=".DetailFragment"
+        tools:layout_editor_absoluteX="-11dp"
+        tools:layout_editor_absoluteY="-61dp">
+
+
+        <EditText
+            android:id="@+id/shoe_description_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/add_button"
+            app:layout_constraintStart_toStartOf="@+id/cancel_button"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_description" />
+
+        <TextView
+            android:id="@+id/shoe_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shoeDescription"
+            app:layout_constraintBottom_toTopOf="@+id/shoe_description_text"
+            app:layout_constraintStart_toStartOf="@+id/shoe_description_text"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_size_text" />
+
+        <EditText
+            android:id="@+id/shoe_size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/shoe_description"
+            app:layout_constraintStart_toStartOf="@+id/shoe_description"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_size" />
+
+        <TextView
+            android:id="@+id/shoe_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shoeSize"
+            app:layout_constraintBottom_toTopOf="@+id/shoe_size_text"
+            app:layout_constraintStart_toStartOf="@+id/shoe_size_text"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_company_text" />
+
+        <TextView
+            android:id="@+id/shoe_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shoeName"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.52"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/shoe_company"
+            app:layout_constraintStart_toStartOf="@+id/shoe_company"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_name" />
+
+        <TextView
+            android:id="@+id/shoe_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shoeCompany"
+            app:layout_constraintBottom_toTopOf="@+id/shoe_company_text"
+            app:layout_constraintStart_toStartOf="@+id/shoe_company_text"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+        <EditText
+            android:id="@+id/shoe_company_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/shoe_size"
+            app:layout_constraintStart_toStartOf="@+id/shoe_size"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_company" />
+
+        <Button
+            android:id="@+id/add_button"
+            style="@style/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cancel_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.88" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="@style/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:text="@string/cancel_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/add_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.88" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

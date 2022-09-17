@@ -14,4 +14,14 @@
     <string name="instructionText1">How to use the app</string>
     <string name="instructionText2"><![CDATA[- Click \"Start\" Button to go to shoe list screen.\n\n- You can click the floating button to add new shoe.\n\n- Then in shoe detail screen you add new shoe data like name, company, description & size and save it.\n\n- You will notice 3 dots icon in the appbar which contain \"Logout\" button.]]></string>
     <string name="getting_started">Start</string>
+    <string name="shoeName">Name</string>
+    <string name="shoeCompany">Company</string>
+    <string name="shoeSize">Size</string>
+    <string name="shoeDescription">Description</string>
+    <string name="add_text">Add</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="welcome_string">Welcome</string>
+    <string name="instructions_string">Instructions</string>
+    <string name="shoe_list_string">Shoe List</string>
+    <string name="detail_list_string">Shoe Detail</string>
 </resources>

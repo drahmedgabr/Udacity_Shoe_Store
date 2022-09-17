@@ -18,6 +18,8 @@
 
         <TextView
             android:id="@+id/welcome_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             style="@style/shoe_store_logo"
             android:text="@string/app_name_welcome" />
 

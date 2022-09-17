@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!--use layout tag to enable data binding-->
+
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <!--use constraintlayout because its amazing flexibility & power to arrange items-->
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
