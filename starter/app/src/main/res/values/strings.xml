@@ -11,4 +11,6 @@
     <string name="next_button">Next</string>
     <string name="welcome_text">Welcome again!</string>
     <string name="welcomeText2">Hi Ahmed\nYour Last Login was on 15/09/2022 13:25:09</string>
+    <string name="instructionText1">How to use the app</string>
+    <string name="instructionText2"><![CDATA[- Click \"Next\" Button to go to shoe list screen.\n\n- You can click the floating button to add new shoe.\n\n- Then in shoe detail screen you add new shoe data like name, company, description & size and save it.\n\n- You will notice 3 dots icon in the appbar which contain \"Logout\" button.]]></string>
 </resources>
