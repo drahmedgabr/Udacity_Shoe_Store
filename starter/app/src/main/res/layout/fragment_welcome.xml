@@ -25,7 +25,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.26999998" />
+            app:layout_constraintVertical_bias="0.18" />
 
         <Button
             android:id="@+id/next_button"
@@ -33,28 +33,39 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
             android:text="@string/next_button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.84"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/welcome_text2"
-            app:layout_constraintVertical_bias="0.19"
+            app:layout_constraintVertical_bias="0.84000003"
             tools:ignore="TextContrastCheck" />
 
         <TextView
             android:id="@+id/welcome_text2"
+            style="@style/paragraph_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:text="@string/welcomeText2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/welcome_logo"
-            app:layout_constraintVertical_bias="0.19"
-            style="@style/paragraph_style" />
+            app:layout_constraintVertical_bias="0.13999999"
+            app:srcCompat="@drawable/user"
+            tools:ignore="ImageContrastCheck"
+            tools:layout_editor_absoluteX="122dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
