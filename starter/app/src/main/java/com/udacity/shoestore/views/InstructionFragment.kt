@@ -23,7 +23,8 @@ class InstructionFragment : Fragment() {
         )
 
         binding.instructionsNextButton.setOnClickListener {
-            view!!.findNavController().navigate(com.udacity.shoestore.views.InstructionFragmentDirections.actionInstructionFragmentToListFragment())
+            view!!.findNavController()
+                .navigate(com.udacity.shoestore.views.InstructionFragmentDirections.actionInstructionFragmentToListFragment())
         }
 
         return binding.root

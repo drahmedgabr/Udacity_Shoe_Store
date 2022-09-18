@@ -8,6 +8,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="shoe"
             type="com.udacity.shoestore.models.Shoe" />
@@ -31,8 +32,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:text="@={shoe.description}"
             android:inputType="textPersonName"
+            android:text="@={shoe.description}"
             app:layout_constraintBottom_toTopOf="@+id/add_button"
             app:layout_constraintStart_toStartOf="@+id/cancel_button"
             app:layout_constraintTop_toBottomOf="@+id/shoe_description" />
@@ -51,8 +52,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:text="@={shoe.size}"
             android:inputType="textPersonName"
+            android:text="@={shoe.size}"
             app:layout_constraintBottom_toTopOf="@+id/shoe_description"
             app:layout_constraintStart_toStartOf="@+id/shoe_description"
             app:layout_constraintTop_toBottomOf="@+id/shoe_size" />
@@ -82,8 +83,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:text="@={shoe.name}"
             android:inputType="textPersonName"
+            android:text="@={shoe.name}"
             app:layout_constraintBottom_toTopOf="@+id/shoe_company"
             app:layout_constraintStart_toStartOf="@+id/shoe_company"
             app:layout_constraintTop_toBottomOf="@+id/shoe_name" />
@@ -102,8 +103,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:text="@={shoe.company}"
             android:inputType="textPersonName"
+            android:text="@={shoe.company}"
             app:layout_constraintBottom_toTopOf="@+id/shoe_size"
             app:layout_constraintStart_toStartOf="@+id/shoe_size"
             app:layout_constraintTop_toBottomOf="@+id/shoe_company" />

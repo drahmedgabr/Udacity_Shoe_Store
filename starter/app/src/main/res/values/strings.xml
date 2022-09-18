@@ -24,4 +24,7 @@
     <string name="instructions_string">Instructions</string>
     <string name="shoe_list_string">Shoe List</string>
     <string name="detail_list_string">Shoe Detail</string>
+    <string name="logout_text">Logout</string>
+    <string name="toast_added">Shoe Added Sucessfully</string>
+    <string name="toast_empty">Please Enter All Values</string>
 </resources>

@@ -23,7 +23,8 @@ class LoginFragment : Fragment() {
         )
 
         binding.nextButton.setOnClickListener {
-            view!!.findNavController().navigate(com.udacity.shoestore.views.LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
+            view!!.findNavController()
+                .navigate(com.udacity.shoestore.views.LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
         }
 
         return binding.root
