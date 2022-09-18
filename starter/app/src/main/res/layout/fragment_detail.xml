@@ -9,14 +9,13 @@
 
     <data>
         <variable
-            name="shoeModel"
-            type="com.udacity.shoestore.viewmodel.ShoeModel" />
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
     </data>
 
     <!--use constraintlayout because its amazing flexibility & power to arrange items-->
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/shoe_name_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toTopOf="@+id/shoe_name"
@@ -32,6 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:text="@={shoe.description}"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toTopOf="@+id/add_button"
             app:layout_constraintStart_toStartOf="@+id/cancel_button"
@@ -51,7 +51,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number"
+            android:text="@={shoe.size}"
+            android:inputType="textPersonName"
             app:layout_constraintBottom_toTopOf="@+id/shoe_description"
             app:layout_constraintStart_toStartOf="@+id/shoe_description"
             app:layout_constraintTop_toBottomOf="@+id/shoe_size" />
@@ -70,17 +71,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/shoeName"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/shoe_name_text"
+            app:layout_constraintStart_toStartOf="@+id/shoe_name_text"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.52"
             app:layout_constraintVertical_chainStyle="packed" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/shoe_name_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:text="@={shoe.name}"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toTopOf="@+id/shoe_company"
             app:layout_constraintStart_toStartOf="@+id/shoe_company"
@@ -93,13 +95,14 @@
             android:text="@string/shoeCompany"
             app:layout_constraintBottom_toTopOf="@+id/shoe_company_text"
             app:layout_constraintStart_toStartOf="@+id/shoe_company_text"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+            app:layout_constraintTop_toBottomOf="@+id/shoe_name_text" />
 
         <EditText
             android:id="@+id/shoe_company_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:text="@={shoe.company}"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toTopOf="@+id/shoe_size"
             app:layout_constraintStart_toStartOf="@+id/shoe_size"
