@@ -28,7 +28,8 @@
             android:id="@+id/action_instructionFragment_to_listFragment"
             app:destination="@id/listFragment"
             app:launchSingleTop="false"
-            app:popUpToInclusive="false" />
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/listFragment"
