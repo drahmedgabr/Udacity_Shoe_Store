@@ -16,7 +16,7 @@
         app:layout_constraintBottom_toTopOf="@+id/shoe_name"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintTop_toTopOf="@+id/shoe_name_text"
-        tools:context=".DetailFragment"
+        tools:context=".views.DetailFragment"
         tools:layout_editor_absoluteX="-11dp"
         tools:layout_editor_absoluteY="-61dp">
 

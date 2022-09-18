@@ -1,4 +1,4 @@
-package com.udacity.shoestore
+package com.udacity.shoestore.views
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentListBinding
-import com.udacity.shoestore.databinding.FragmentLoginBinding
 
 class ListFragment : Fragment() {
 
@@ -22,7 +22,7 @@ class ListFragment : Fragment() {
         )
 
         binding.floatingActionButton.setOnClickListener {
-            view!!.findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment())
+            view!!.findNavController().navigate(com.udacity.shoestore.views.ListFragmentDirections.actionListFragmentToDetailFragment())
         }
 
         return binding.root
