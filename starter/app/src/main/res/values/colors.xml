@@ -6,4 +6,5 @@
     <color name="mainColor">#2196F3</color>
     <color name="mainDark">#155F99</color>
     <color name="secondColor">#87AECD</color>
+    <color name="cardColor">#10EED9</color>
 </resources>
