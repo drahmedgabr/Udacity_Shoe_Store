@@ -61,7 +61,7 @@
             style="@style/card_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/shoeCompany" />
+            android:text="@string/shoeDescription" />
 
         <TextView
             android:id="@+id/linearlayout_description"
