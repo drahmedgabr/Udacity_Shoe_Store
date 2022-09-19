@@ -10,7 +10,11 @@
         android:label="@string/login_text">
         <action
             android:id="@+id/action_loginFragment_to_welcomeFragment"
-            app:destination="@id/welcomeFragment" />
+            app:destination="@id/welcomeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_left"
+            app:popExitAnim="@anim/slide_right" />
     </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
@@ -18,7 +22,11 @@
         android:label="@string/welcome_string">
         <action
             android:id="@+id/action_welcomeFragment_to_instructionFragment"
-            app:destination="@id/instructionFragment" />
+            app:destination="@id/instructionFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_left"
+            app:popExitAnim="@anim/slide_right" />
     </fragment>
     <fragment
         android:id="@+id/instructionFragment"
@@ -27,7 +35,11 @@
         <action
             android:id="@+id/action_instructionFragment_to_listFragment"
             app:destination="@id/listFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
             app:launchSingleTop="false"
+            app:popEnterAnim="@anim/slide_left"
+            app:popExitAnim="@anim/slide_right"
             app:popUpTo="@id/loginFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -37,7 +49,11 @@
         android:label="@string/shoe_list_string">
         <action
             android:id="@+id/action_listFragment_to_detailFragment"
-            app:destination="@id/detailFragment" />
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_left"
+            app:popExitAnim="@anim/slide_right" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
