@@ -32,6 +32,7 @@ class DetailFragment : Fragment() {
 
         binding.shoe = Shoe()
 
+
         binding.addButton.setOnClickListener {
             context?.let { it -> shoeModel.addShoe(it, binding.shoe!!) }
         }

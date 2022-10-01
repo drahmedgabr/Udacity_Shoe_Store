@@ -60,7 +60,7 @@ class ListFragment : Fragment(), MenuProvider {
         )
 
         binding.linearlayoutName.setText(shoe.name)
-        binding.linearlayoutSize.setText(shoe.size.toString())
+        binding.linearlayoutSize.setText(shoe.size)
         binding.linearlayoutCompany.setText(shoe.company)
         binding.linearlayoutDescription.setText(shoe.description)
 
